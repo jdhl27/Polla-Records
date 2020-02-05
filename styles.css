@@ -1,0 +1,138 @@
+@font-face {
+  font-family: Abel;
+  src: url("fonts/Abel/Abel-Regular.ttf");
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url("fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: Anton;
+  src: url("fonts/Anton/Anton-Regular.ttf");
+}
+
+:root{
+  --dark-primary-color:#2a3b47;
+  --dark-secundary-color:#22303a;
+  --grey-color:#2a3b47;
+  --blue-light-color:#72e0d1;
+  --green-color:#83ba52;
+  --yellow-color:#f5d67b;
+}
+body {
+  margin: 0;
+}
+
+.dark-mode-body {
+  background-color: var(--dark-primary-color);
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.header {
+  background: var(--dark-secundary-color);
+  height: 68px;
+  font-family: Anton;
+  display: flex;
+  justify-content: center;
+}
+
+.container-title-albumes{
+  display: flex; 
+  justify-content: center;
+}
+
+.container-title-albumes>h2{
+  font-family: Abel;
+  margin: 0;
+  width: 74%;
+  text-align: center;
+}
+
+.container-title-albumes>h2::after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 0.1vw;
+  width: 30%;
+  top: 11vw;
+  right: 12.4vw;
+  border-radius: 19%;
+}
+
+.container-title-albumes>h2::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 0.1vw;
+    width: 30%;
+    top: 11vw;
+    right: 56.4vw;
+    border-radius: 19%;
+}
+.section-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 9px 0;
+}
+
+.header>h1 {
+  color: white;
+  text-shadow: 1px 3px 1px black;
+  letter-spacing: 2.3px;
+  font-weight: 100;
+  margin: 0;
+  margin-top: 0.98vw;
+  font-size: 2vw;
+}
+
+.article {
+  padding: 24px;
+  margin: 32px;
+  width: 18%;
+  color: black;
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  box-shadow: 1px 1px 11px 1px #c8d4dc;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.dark-mode-article {
+  background-color: #1a252d;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+  box-shadow: none;
+  border-color: #505050;
+}
+
+.article-img{
+  width: 86%;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0px 0px 4px 0px #000000;
+  padding: 4px;
+}
+
+.article-img:hover{
+  
+filter: blur(2px);
+}
+
+.article-title, .article-date{
+  font-family: Barlow;
+  margin: 12px 0;
+}
+
+.dark-mode-article-date{
+  
+color: var(--yellow-color);
+}
+
+.article-description{
+  text-align: justify;
+  font-family: Abel;
+}
